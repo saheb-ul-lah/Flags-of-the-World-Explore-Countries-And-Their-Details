@@ -1,7 +1,7 @@
 # 🌍 Flags of the World - Explore Countries And Their Details 
 
 Flags of the World is a web application designed to provide users with an interactive platform to explore flags and details of countries from around the world.
-
+API used: [REST Countries API](https://restcountries.com/)
 ## Features:
 
 🎉 **Flag Display**: View flags of all countries with crisp and clear images.
@@ -39,6 +39,9 @@ Flags of the World is a web application designed to provide users with an intera
 ## Credits:
 
 🎓 This project would not have been possible without the valuable tutorial provided by **Anurag Singh** on his YouTube channel **Procodrr**. Thank you for the inspiration and guidance!
+
+Additionally, this project utilizes flag images and country data from the [REST Countries API](https://restcountries.com/). Special thanks to all contributors and collaborators.
+
 
 🌟 Additionally, this project utilizes flag images and country data from various open-source repositories and APIs. Special thanks to all contributors and collaborators.
 
