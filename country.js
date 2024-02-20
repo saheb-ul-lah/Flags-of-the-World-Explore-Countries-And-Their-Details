@@ -34,18 +34,18 @@ document.addEventListener('DOMContentLoaded', function () {
         languages.innerText = country.languages ? Object.values(country.languages).join(', ') : '';
 
         if (country.borders) {
-            country.borders.forEach(border => {
+
+            country.borders.forEach((border) => {
                 fetch(`https://restcountries.com/v3.1/alpha/${border}`)
-                    .then(response => response.json())
-                    .then(borderCountry => {
-                        const borderCountryTag = document.createElement('a');
-                        borderCountryTag.innerText = borderCountry.name.common;
-                        borderCountryTag.href = `country.html?name=${encodeURIComponent(borderCountry.name.common)}`;
-                        borderCountryTag.classList.add('border-country');
-                        borderCountries.appendChild(borderCountryTag);
+                    .then((res) => res.json())
+                    .then(([borderCountry]) => {
+                        // console.log(borderCountry)
+                        const borderCountryTag = document.createElement('a')
+                        borderCountryTag.innerText = borderCountry.name.common
+                        borderCountryTag.href = `country.html?name=${borderCountry.name.common}`
+                        borderCountries.append(borderCountryTag)
                     })
-                    .catch(error => console.log('Error fetching border country data:', error));
-            });
+            })
         }
     }
 
