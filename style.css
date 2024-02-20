@@ -47,6 +47,13 @@ a {
 
 .theme-changer {
     cursor: pointer;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 1vh 1vw;
+    border-radius: 10px;
+}
+.theme-changer:hover{
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease-in-out;
 }
 
 .countries-container {
@@ -56,7 +63,7 @@ a {
     gap: 64px;
     flex-wrap: wrap;
     margin-inline: auto;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .country-card {
